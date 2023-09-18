@@ -37,14 +37,8 @@ export default function NavBar () {
         </nav>
       </>
     )
-    function styles (props) {
-      
-    }
-}
 
-// const styles = {
-//   transition:"left-[0%] "
-// }
+}
 
 const stylings = {
   navstyles:'flex flex-row justify-between items-center h-[80px] bg-[#000]',
