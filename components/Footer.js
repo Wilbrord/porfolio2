@@ -16,19 +16,19 @@ export default function Footer () {
                     <li>
                     <Link href='#'>About me</Link>
                     </li>
+                </ul>
+                <ul className={footerdesign.iconsBlock2}>
                     <li>
-                    <Link href='#'>Projects</Link>
+                        <Link href='#'>Projects</Link>
                     </li>
                     <li>
-                    <Link href='#'>Contact me</Link>
+                        <Link href='#'>Contact me</Link>
                     </li>
                 </ul>
                 <ul className={footerdesign.detailsBlock}>
                     <li>Tel : 07017657170, 07048109893</li>
                     <li>Email : stanwilbrord@gmail.com</li> 
-                    <small>&copy; {year}  
-                        TeeCeeWears... A Divistion Of Doncaesarius Nig Ltd
-                    </small>
+                    <small>&copy; {year}</small>
                 </ul>
             </div>
           
@@ -36,7 +36,8 @@ export default function Footer () {
   }
         
   const footerdesign = {
-    fotterDiv:' md:h-[200px] p-8 gap-4 flex md:flex-row justify-between items-center bg-black text-orange-500 text-[25px] gap-2',
-    iconsBlock:'flex flex-col ml-3',
-    detailsBlock:'font-reading text-lg text-white',
+    fotterDiv:'md:h-[150px] flex justify-between flex-row justify-center items-center bg-black text-gray-500 text-[28px]',
+    iconsBlock:'flex flex-col ml-6 gap-4',
+    iconsBlock2:'flex flex-col ml-6 gap-4 text-orange-600 ',
+    detailsBlock:'font-reading text-lg text-white mr-6 gap-2',
   }

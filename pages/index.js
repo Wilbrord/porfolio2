@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -14,15 +14,15 @@ export default function Home() {
       </Head>
       <main className={styling.mainBody}>
         <div className={styling.body}> 
-          <Image width={500} height={500} src='/heros-page.png' alt='real fast logo' className={styling.heroSection}/> 
+          <Image width={500} height={500} src='/wallpaper.jpg' alt='real fast logo' className={styling.heroSection}/> 
           <div className={styling.heroSection2}> 
             <ul className={styling.heroSection2Content}>
               <li style={{fontSize:25,color:'white'}}>HI, I'M A FREELANCER</li>
               <li style={{fontSize:60,color:'white'}}>Front-End Developer</li>
             </ul>
             <div className={styling.heroBtnDiv}>
-              <button className={styling.heroBtn} style={{}}>Projects</button> 
-              <button className={styling.heroBtn} style={{backgroundColor:'none'}}>Contacts</button> 
+              <Link href='/contact' className={styling.heroBtn}>Contact</Link>
+              <Link href='/projects' className={styling.heroBtn} style={{backgroundColor:'none'}}>Project</Link>
             </div> 
           </div>
         </div>
@@ -38,5 +38,5 @@ export default function Home() {
     heroSection2:'flex flex-col justify-center items-center w-[100%] h-[100%] l:w-[1349px] bg-[#000]/80 absolute top-0 z-[5] ',
     heroSection2Content:'flex flex-col text-center justify-center items-center',
     heroBtnDiv:'flex flex-row flex-between justify-center items-center gap-3 w-80 h-16',
-    heroBtn:'w-[100%] h-[100%] text-[30px] mt-16  bg-orange-600 hover:bg-transparent hover:text-orange-400 rounded-md border ',
+    heroBtn:'w-[100%] h-[100%] text-[30px] flex items-center justify-center mt-16  bg-orange-600 hover:bg-transparent hover:text-orange-400 rounded-md border ',
   }

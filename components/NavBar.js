@@ -9,7 +9,7 @@ export default function NavBar () {
       <>
         <div>
         <nav className={stylings.navstyles}>
-          <h1 className={stylings.brandName}>Portfolio.</h1>
+          <h1 className={stylings.brandName}>Wilbrord.</h1>
 
           <ul className={stylings.btnBlock}>
             <Link href='/' className={stylings.navIconbutton}>Home</Link>
@@ -29,10 +29,10 @@ export default function NavBar () {
           onClick={() => setShowMobileNav(false)}/>
           <div className={stylings.menublock}>
               <ul className={stylings.mobileItemBlock} >
-                <Link href='/' className={stylings.mobileItems}>Home</Link>
-                <Link href='/about' className={stylings.mobileItems}>About</Link>
-                <Link href='/contact' className={stylings.mobileItems}>Contact</Link>
-                <Link href='/projects' className={stylings.mobileItems}>Project</Link>
+                <Link href='/' className={stylings.mobileItems} onClick={() => setShowMobileNav(false)}>Home</Link>
+                <Link href='/about' className={stylings.mobileItems} onClick={() => setShowMobileNav(false)}>About</Link>
+                <Link href='/contact' className={stylings.mobileItems} onClick={() => setShowMobileNav(false)}>Contact</Link>
+                <Link href='/projects' className={stylings.mobileItems} onClick={() => setShowMobileNav(false)}>Project</Link>
               </ul>
           </div>
         </nav>
